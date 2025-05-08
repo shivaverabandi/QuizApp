@@ -35,7 +35,7 @@ public class QuestionController {
        return questionService.addQuestion(question);
     }
     @DeleteMapping("/delete-q")
-    public String deleteQuestion(@RequestBody Question question){
-        return questionService.deleteQuestion(question);
+    public String deleteQuestion(@RequestBody Integer questionNumber){
+        return questionService.deleteQuestion(questionNumber);
     }
 }

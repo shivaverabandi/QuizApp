@@ -36,9 +36,9 @@ public class QuestionService implements IQuestionService {
     }
 
     @Override
-    public String deleteQuestion(Question question) {
-        if(questionRepo.existsById(question.getId())) {
-            questionRepo.deleteById(question.getId());
+    public String deleteQuestion(Integer id) {
+        if(questionRepo.existsById(id)) {
+            questionRepo.deleteById(id);
             return "Successfully deleted question...!!!";
         }
         return "Not Successfully deleted question...!!!";

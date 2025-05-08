@@ -9,5 +9,5 @@ public interface IQuestionService {
     Long getNumberOfQuestions();
     List<Question> getQuestionsByCategory(String category);
     String addQuestion(Question question);
-    String deleteQuestion(Question question);
+    String deleteQuestion(Integer id);
 }
